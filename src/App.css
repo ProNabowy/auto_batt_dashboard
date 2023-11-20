@@ -1,0 +1,191 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  outline: none;
+}
+
+:root {
+  --min-color: #DB1020;
+}
+
+.container {
+  margin: auto;
+}
+
+header .p-dropdown {
+  border: none;
+  outline: none;
+  box-shadow: none !important;
+}
+
+header .p-dropdown .p-dropdown-trigger {
+  display: none;
+}
+
+.p-datatable {
+  border: 1px solid #ccc !important;
+}
+
+.p-button[aria-label="Yes"] {
+  background-color: var(--min-color) !important;
+  box-shadow: none !important;
+  border: none !important;
+}
+
+.p-datatable.p-datatable-gridlines .p-datatable-thead>tr>th,
+.p-datatable.p-datatable-gridlines:has(.p-datatable-thead):has(.p-datatable-tbody) .p-datatable-tbody>tr>td {
+  background-color: #f9f1f1 !important;
+  color: #918c9a;
+  font-size: 12px;
+  font-weight: 400 !important;
+  border: none !important;
+  padding: 15px 35px;
+}
+
+.p-datatable.p-datatable-gridlines:has(.p-datatable-thead):has(.p-datatable-tbody) .p-datatable-tbody>tr>td {
+  border-top: 1px solid #ccc !important;
+  border-bottom: 1px solid #ccc !important;
+}
+
+.p-datatable .p-datatable-header {
+  background-color: transparent !important;
+  border: none !important;
+}
+
+.p-datatable .p-paginator {
+  background-color: transparent !important;
+  border: none !important;
+}
+
+.p-datatable .p-dropdown {
+  background-color: transparent !important;
+  margin-left: 10px;
+  border: 2px solid #8b6464 !important;
+  box-shadow: none !important;
+  height: 38px !important;
+}
+
+.p-datatable .p-dropdown .p-dropdown-label.p-placeholder,
+.p-datatable .p-inputtext {
+  padding: 5px !important;
+}
+
+.p-datatable.p-datatable-gridlines .p-paginator-bottom {
+  justify-content: flex-end;
+}
+
+.p-paginator .p-paginator-pages .p-paginator-page,
+.p-paginator .p-paginator-first,
+.p-paginator .p-paginator-prev,
+.p-paginator .p-paginator-next,
+.p-paginator .p-paginator-last {
+  border-radius: 6px !important;
+  width: 34px !important;
+  height: 34px !important;
+  background-color: #f9f1f1 !important;
+  color: #8b6464 !important;
+  margin: 0 5px !important;
+}
+
+.p-paginator-first,
+.p-paginator-last {
+  display: none !important;
+}
+
+
+.p-paginator .p-paginator-pages .p-paginator-page.p-highlight,
+.p-paginator .p-paginator-pages .p-paginator-page:hover {
+  background-color: var(--min-color) !important;
+  color: white !important;
+}
+
+
+.p-paginator .p-paginator-prev,
+.p-paginator .p-paginator-next {
+  width: fit-content !important;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.dot-circle {
+  position: relative;
+  margin-left: 20px;
+  color: #CFCFCF;
+}
+
+.dot-circle::after {
+  content: "";
+  width: 5px;
+  height: 5px;
+  position: absolute;
+  left: -15px;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: white;
+  border-radius: 50%;
+}
+
+.p-menuitem-text {
+  flex: 1;
+}
+
+.active-table-head.p-datatable.p-datatable-gridlines .p-datatable-thead>tr>th {
+  background-color: #041223 !important;
+}
+
+
+.active-table-head.p-datatable.p-datatable-gridlines:has(.p-datatable-thead):has(.p-datatable-tbody) .p-datatable-tbody>tr>td,
+.active-table-head.p-datatable .p-paginator {
+  background-color: #06192c !important;
+}
+
+.shadow {
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 10px !important;
+}
+
+.product .p-dropdown {
+  width: 100%;
+}
+
+.product .p-dropdown .p-dropdown-label {
+  padding: 8px !important;
+  color: black !important;
+  font-size: 13px !important;
+}
+
+.p-dropdown .p-dropdown-label.p-placeholder {
+  padding: 0.5rem  !important;
+}
+
+.reels .p-button.p-button-icon-only,
+.reels .p-calendar-w-btn-right .p-inputtext {
+  padding: 8px !important;
+  background-color: transparent !important;
+  color: black !important;
+  border-color: #8B6464 !important;
+}
+.reels .p-button.p-button-icon-only {
+  border-color: #8B6464 !important;
+  border-left-color: transparent !important;
+}
+
+.reels .p-calendar-w-btn-right .p-inputtext {
+  box-shadow: none;
+  border-right-color: transparent !important;
+}
+
+.reels .p-dropdown:not(.p-disabled):hover,
+.reels .p-dropdown{
+  border-color: #8B6464 !important;
+}
+
+
+.grid-nogutter {
+  grid-template-columns: repeat(12, minmax(0, 1fr));
+}
+
+.p-dataview-emptymessage {
+  grid-column: span 12 / span 12 !important;
+}

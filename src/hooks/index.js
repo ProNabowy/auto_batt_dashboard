@@ -1,0 +1,1 @@
+export { default as useCustomEffect } from "./useCustomEffect"
